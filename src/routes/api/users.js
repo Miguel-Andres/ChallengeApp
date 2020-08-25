@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
+var usercontroller = require("../../controllers/usersController")
+
 
 /* GET home page. */
-router.get('/', function( req, res, next) {
-  res.send("hola soy la api de los usuarios");
-});
+router.get('/', usercontroller.mostrar);
+
 
 module.exports = router;
