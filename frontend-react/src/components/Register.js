@@ -3,7 +3,11 @@ import React, { PureComponent } from 'react'
 import {Form ,Row ,Col ,Button} from "react-bootstrap"
 
 const style ={
-    backgroundColor : "grey"
+  margin :"35px",
+  padding:"70px",
+  backgroundColor:"#e7a61a",
+  borderRadius: "0px 200px 1px 105px",   
+  border:" 18px solid #000000"
 }
 
 export default class Register extends PureComponent {
@@ -11,34 +15,44 @@ export default class Register extends PureComponent {
         return (
             <React.Fragment>
        
-                <Form style={style}>
-                <Form.Row>
-    <Col>
-    <Form.Label>Nombre</Form.Label>
-      <Form.Control placeholder="First name" />
-    </Col>
-    <Col>
-    <Form.Label>Apellido</Form.Label>
-      <Form.Control placeholder="Last name" />
-    </Col>
-  </Form.Row>
-                <Form.Group  >
+                <Form style={style} className="container  ">
+          <Form.Row>
+            <Col>
+                <Form.Label>Nombre</Form.Label>
+                <Form.Control placeholder="First name" />
+            </Col>
+            <Col>
+                <Form.Label>Apellido</Form.Label>
+                <Form.Control placeholder="Last name" />
+            </Col>
+          </Form.Row>
+
+                <Form.Group>
+                    <Col >
                     <Form.Label column >
                      Email
                     </Form.Label>
-                    <Col >
                     <Form.Control type="email" placeholder="Email" />
-                </Col>
-                    </Form.Group>
+                     </Col>
+                </Form.Group>
 
-  <Form.Group  >
-    <Form.Label column ={6} >
-      Password
-    </Form.Label>
+  <Form.Row  >
+   
+
     <Col >
+    <Form.Label  >
+      Password
+    </Form.Label >
       <Form.Control type="password" placeholder="Password" />
     </Col>
-  </Form.Group>
+    <Col >
+    <Form.Label >
+      Repet Password
+    </Form.Label>
+      <Form.Control type="password" placeholder="Password" />
+    </Col>
+    
+  </Form.Row>
   <fieldset>
     <Form.Group >
         

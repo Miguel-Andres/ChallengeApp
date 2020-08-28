@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 
-import { Form, NavDropdown ,Button } from "react-bootstrap"
-
+import { Form, NavDropdown ,Button, ListGroup } from "react-bootstrap"
+import {Link} from "react-router-dom"
 
 const style={
 
@@ -28,9 +28,9 @@ export default class Login extends PureComponent {
     <Form.Control type="password" placeholder="Password" />
   </Form.Group>
   <Form.Group controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
+  <Link to ="/register"><ListGroup.Item variant="warning" > Sign Up</ListGroup.Item> </Link>
   </Form.Group>
-  <Button variant="primary" type="submit">
+  <Button variant="success" type="submit">
     Submit
 </Button>
 </Form>
