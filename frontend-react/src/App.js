@@ -5,12 +5,13 @@ import { BrowserRouter as Router, Switch,  Route,  Link } from "react-router-dom
 import NavBar from "./components/NavBar.js"
 import Register from "./components/Register"
 import Profile from "./components/Profile"
-
+import Users from "./components/user/Users"
 
 function App() {
   return (
     <React.Fragment>
 
+      
       <Router>
 
       <div className="container">
@@ -19,9 +20,17 @@ function App() {
       <Route path="/register">
         <Register />
       </Route>
+
       <Route path="/profile">
-        <Profile />
+        <Profile />        
       </Route>
+
+      <Route path="/users">
+        < Users />        
+      </Route>
+
+      
+
       
 
       
@@ -29,6 +38,7 @@ function App() {
       </div>
       </Router>
 
+      
     </React.Fragment>
   );
 }
