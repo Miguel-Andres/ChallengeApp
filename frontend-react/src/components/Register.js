@@ -1,4 +1,4 @@
-import React, { useState ,useEffect } from 'react'
+import React, { useState  } from 'react'
 
 import {Form ,Row ,Col ,Button} from "react-bootstrap"
 
@@ -31,7 +31,7 @@ export default function Register(props) {
     }
 
   const enviarDatos =(e)=>{
-    e.preventDefault()
+   
     var url = 'http://localhost:3000/api/users';
     var data = datos;
     
@@ -143,10 +143,12 @@ export default function Register(props) {
       <Button type="submit"  >Sign in</Button>
     </Col>
   </Form.Group>
-        <h2>{datos.rol}</h2>
+        <h2>{JSON.stringify(datos)}</h2>
   </Form>
 
             </React.Fragment>
         )
     
 }
+
+  

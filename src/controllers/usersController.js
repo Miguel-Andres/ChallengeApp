@@ -23,6 +23,8 @@ let userController = {
         },
 
     crear : (req,res) => {
+
+
         db.User.create({
             name : req.body.name ,
             lastname: req.body.lastName ,
@@ -33,7 +35,7 @@ let userController = {
 
         }).then(value=>{
             
-           res.send("Nuevo usuario")
+           res.send(value)
         })
         
 

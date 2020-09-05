@@ -13,6 +13,7 @@ export default function Users() {
 
             setIsLoaded(true);
             setDatos(result.datos)
+            console.log( result  )
 
           } , (error) =>{
               setIsLoaded(true);
