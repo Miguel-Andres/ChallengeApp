@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 
 import{Card ,Badge } from "react-bootstrap"
 
@@ -17,8 +17,8 @@ const style = {
 
 }
 
-export default class InfoUser extends PureComponent {
-    render() {
+export default function InfoUser(){
+   
         return (
             <React.Fragment >
                  <Card border="info" style={{ width: "700px" }}>
@@ -47,5 +47,4 @@ export default class InfoUser extends PureComponent {
                 </Card>
             </React.Fragment>
         )
-    }
-}
+        }

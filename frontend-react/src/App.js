@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar.js"
 import Register from "./components/Register"
 import Profile from "./components/Profile"
 import Users from "./components/user/Users"
+import Store from "./components/Store"
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
 
       <Route path="/users">
         < Users />        
+      </Route>
+
+      <Route path="/store">
+        <Store/>       
       </Route>
 
       

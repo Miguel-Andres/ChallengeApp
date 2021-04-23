@@ -1,37 +1,36 @@
 import React, { Component } from 'react'
 
 import { Nav, Navbar } from "react-bootstrap"
- 
+
 import Login from './Login.js';
+import Car from './Car';
 
-export default class NavBar extends Component {
-  render() {
-    return (
+export default function NavBar() {
 
-      <React.Fragment>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <Navbar.Brand href="/">Challenge App</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="#store">Store</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
+  return (
 
-            </Nav>
+    <React.Fragment>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar.Brand href="/">Challenge App</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#store">Store</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
 
-            <Nav>
+          </Nav>
 
+          <Nav>
             <Login />
+            <Car/>
+          </Nav>
 
-              
-              
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
+        </Navbar.Collapse>
+      </Navbar>
 
 
-      </React.Fragment>
+    </React.Fragment>
 
-    )
-  }
+  )
+
 }
